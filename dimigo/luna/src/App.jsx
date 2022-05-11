@@ -17,6 +17,11 @@ function App() {
             <p>s.</p>
             <p style = {style}>{name}</p>
             <div className = "gray-box"></div>
+            <div id = "potato">
+                <div id = "children">
+                    <h1>Hello</h1>
+                </div>
+            </div>
         </div>
     );
 }
