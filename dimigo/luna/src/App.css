@@ -1,3 +1,7 @@
+:root{
+    font-size: 20px;
+}
+
 #potato{
     width: 50vw;
     height: 100vh;
@@ -7,6 +11,7 @@
     margin-left: 25px;
     box-sizing: border-box;
     color: red;
+    transition: all .5s ease;
 }
 
 #children{
