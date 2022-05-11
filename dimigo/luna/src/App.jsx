@@ -9,7 +9,15 @@ function App() {
     toast.warning("Hello World!");
     toast.error("Hello World!");
 
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0);
+
+    const countUp = () => {
+        setCount(prev => {
+            return prev+1;
+        });
+    }
+
+    
 
     const name = "꺼져!";
     const style = {
@@ -27,6 +35,8 @@ function App() {
             <div id = "potato">
                 <div id = "children">
                     <h1>Hello</h1>
+                    <h1>{count}</h1>
+                    <button onClick = {countUp}>ㅎㅇ</button>
                 </div>
             </div>
         </div>
