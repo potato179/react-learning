@@ -1,8 +1,14 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
+    toast.success("Hello World!");
+    toast.warning("Hello World!");
+    toast.error("Hello World!");
+
     const [count, setCount] = useState(0)
 
     const name = "꺼져!";
@@ -14,6 +20,7 @@ function App() {
     };
     return (
         <div>
+            <ToastContainer />
             <p>s.</p>
             <p style = {style}>{name}</p>
             <div className = "gray-box"></div>
