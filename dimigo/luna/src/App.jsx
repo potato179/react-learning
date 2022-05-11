@@ -5,11 +5,8 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-    toast.success("Hello World!");
-    toast.warning("Hello World!");
-    toast.error("Hello World!");
-
     const [count, setCount] = useState(0);
+    const [abc, setAbc] =  useState("Hello World!");
 
     const countUp = () => {
         setCount(prev => {
@@ -17,7 +14,9 @@ function App() {
         });
     }
 
-    
+    useEffect(() => {
+        toast.success(count);
+    }, [count, abc]);
 
     const name = "꺼져!";
     const style = {
