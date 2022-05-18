@@ -8,7 +8,7 @@
     <style>
         body{
             width: 100vw;
-            height: 100vh;
+            height: 200vh;
             margin: 0;
             display: flex;
             justify-content: center;
@@ -18,7 +18,12 @@
             width: 500px;
             height: 500px;
             border: 1px solid black;
-            position: relative;
+            position: fixed;
+            top: 0;
+        }
+        #parent:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            cursor: pointer;
         }
         #child{
             background: blue;
@@ -28,11 +33,15 @@
             right: 20px;
             top: 0px;
             bottom: 20px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
         }
     </style>
 </head>
 <body>
-    <div id="parent">
+    asjkdfkjdsafkldsjfjsdlkfkldsajlfkdsjklfasdlkjfljdsaljkfsjkldajkl도
+    <div id="parent" onclick = "window.open('https://instagram.com/seoulfixking')">
         <div id="child">
 
         </div>
